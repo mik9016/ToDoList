@@ -1,0 +1,54 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+h1{ 
+    text-align: center;
+}
+#head{
+text-align: center;    
+border: solid 3px black;
+margin: auto;
+width: 20rem;
+padding: 2rem;
+
+}
+input{
+height: 3rem;
+width: 15rem;
+margin: 15px;
+
+}
+button{
+    border: none;
+    background-color: wheat;
+    height: 3rem;
+    width: 5rem;
+    margin: 15px;
+}
+button:hover{
+    background-color: thistle;
+}
+ul{
+
+
+
+
+}
+ul button{
+    height: 2rem;
+    width: 5rem;
+    margin: 15px;
+
+}
+li{
+    list-style: none;
+    border: solid 3px black;
+    width: 20rem;
+    margin: auto;
+    margin-top: 15px;
+    width: 20rem;
+    padding: 2rem;
+    font-size: 50px;
+    display: block;
+
+}
