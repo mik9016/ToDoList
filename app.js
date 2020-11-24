@@ -2,13 +2,14 @@ let inputText;
 let saveBtn = document.getElementById('save');
 let toDoList = document.getElementById('todolist');
 let newElemToDo;
-let editBtn;
+let doneBtn;
 let removeBtn;
 let listText = document.createElement('h1');
 let elem;
 let idNum;
 let createdNewListElem;
 let elemToRemove ;
+let newNote;
 
 
 function addNote(){
@@ -19,33 +20,34 @@ function addNote(){
       
         newElemToDo.setAttribute('id',`${idNum}`);
         newElemToDo.setAttribute('data-set',`${idNum}`);
-        editBtn = document.createElement('button');
+        doneBtn = document.createElement('button');
         removeBtn = document.createElement('button');
         inputText = document.getElementById('ttt').value;
         createdNewListElem = toDoList.append(newElemToDo);
         newElemToDo.innerText=inputText;
-        newElemToDo.append(editBtn,removeBtn);
+        newElemToDo.append(doneBtn,removeBtn);
 
-        editBtn.innerText='Edit';
-        editBtn.className='edit';
+        doneBtn.innerText='Done';
+        doneBtn.className='done';
         removeBtn.innerText='Remove';
         removeBtn.className='remove';
         document.getElementById('ttt').value='';
 
         removeBtn.addEventListener('click', removeNote);
+        doneBtn.addEventListener('click', moveDoneNote)
         
 
 }
 
 function removeNote() {
-        
-        
-       
-      
-       
-        
+        newNote = this.parentNode;
+        newNote.remove();
 
+}
 
+function moveDoneNote() {
+
+        
 }
 
 
