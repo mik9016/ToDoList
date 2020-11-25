@@ -28,11 +28,14 @@ button{
 button:hover{
     background-color: thistle;
 }
-ul{
+#done li{
+background-color: green;
 
 
 
-
+}
+#todo li{
+    background-color: orange;
 }
 ul button{
     height: 2rem;
@@ -52,3 +55,5 @@ li{
     display: block;
 
 }
+
+

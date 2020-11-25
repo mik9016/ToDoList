@@ -10,6 +10,8 @@ let idNum;
 let createdNewListElem;
 let elemToRemove ;
 let newNote;
+let doneList = document.getElementById('done');
+
 
 
 function addNote(){
@@ -46,8 +48,15 @@ function removeNote() {
 }
 
 function moveDoneNote() {
+        let clickedNote = this.parentNode;
+        //clickedNote.style.display="none";
+        doneList.append(clickedNote);
 
-        
+
+        //clickedNote.
+        //set display to none 
+        //visibility w jednym divie jako niewidoczna a potem. appendTo another list.
+
 }
 
 
